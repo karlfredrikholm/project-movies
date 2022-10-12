@@ -1,15 +1,13 @@
 import React from 'react'
-import { MovieContainer } from './styled/MovieContainer.styled';
-import { Overlay } from './styled/Overlay.styled';
 
 const Movie = ({ movie }) => {
   return (
-    <MovieContainer style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w500/${movie.poster_path})` }}>
-      <Overlay>
-        <h3>{movie.original_title}</h3>
-        <h4>Released {movie.release_date}</h4>
-      </Overlay>
-    </MovieContainer>
+    <article className="movieContainer" style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w342/${movie.poster_path})` }}>
+      <div className="overlay">
+        <h3 className="listTitle">{movie.title}</h3>
+        <p className="releaseDate">Released {movie.release_date}</p>
+      </div>
+    </article>
   );
 };
 
