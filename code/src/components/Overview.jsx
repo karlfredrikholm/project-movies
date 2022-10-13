@@ -4,7 +4,7 @@ import { ArrowIcon, StarIcon } from './Icons';
 import { API_KEY, BASE_URL } from '../utils/urls';
 
 const Overview = () => {
-  const stopComplaining = "no";
+  const stopComplaining = 'no';
   const { id } = useParams();
   const navigate = useNavigate();
   const [details, setDetails] = useState({});
