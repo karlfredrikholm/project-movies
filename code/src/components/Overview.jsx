@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowIcon, StarIcon } from './Icons';
-import { API_KEY, BASE_URL } from './utils/urls';
+import { API_KEY, BASE_URL } from '../utils/urls';
 
 const Overview = () => {
   const { id } = useParams();
