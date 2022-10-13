@@ -61,7 +61,6 @@ a {
 /* Overview.jsx */
 .overviewContainer {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 100%);
   background-size: cover;
   min-height: 100vh;
 }
@@ -81,9 +80,12 @@ a {
   font-weight: 700;
 }
 
+.backButton span {
+  transition: all 0.3s;
+}
+
 .backButton:hover span {
-  transition: 0.5s ease-out;
-  transform: translateX(0.5rem);
+  transform: translateX(0.3rem);
 }
 
 .posterAndInfoContainer {
@@ -104,9 +106,12 @@ a {
   flex-direction: column;
   gap: 0.5rem;
   color: white;
-  max-width: 23rem;
   height: fit-content;
   padding-bottom: 1rem;
+}
+
+.infoContainer p {
+  width: 25rem;
 }
 
 .title {
@@ -116,7 +121,8 @@ a {
 .rating {
   background-color: white;
   color: black;
-  padding: 0 0.2rem;
+  padding: 0 0.2rem 0 0.1rem;
+  vertical-align: center;
 }
 
 .starIcon {
