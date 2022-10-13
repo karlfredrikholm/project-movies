@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import ArrowIcon from './ArrowIcon';
+import { ArrowIcon, StarIcon } from './Icons';
 
 const Overview = () => {
   const [details, setDetails] = useState({});
@@ -31,7 +31,7 @@ const Overview = () => {
         <div className="infoContainer">
           <h1 className="titleAndRating">
             <span className="title">{details.title}</span>
-            <span className="rating">{details.vote_average}</span>
+            <span className="rating"><i className="starIcon"><StarIcon /></i>{details.vote_average}</span>
           </h1>
           <p>{details.overview}</p>
         </div>
