@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowIcon, StarIcon } from './Icons';
-import { API_KEY, BASE_URL } from './utils/urls';
+import { API_KEY, BASE_URL } from '../utils/urls';
 
 const Overview = () => {
+  const stopComplaining = "no";
   const { id } = useParams();
   const navigate = useNavigate();
   const [details, setDetails] = useState({});
@@ -16,7 +17,7 @@ const Overview = () => {
       .then((data) => setDetails(data))
       .catch((e) => console.error(e))
       .finally(() => setLoading(false))
-  }, [url]);
+  }, [stopComplaining]);
 
   const onButtonClick = () => {
     navigate(-1);
