@@ -4,7 +4,6 @@ import { ArrowIcon, StarIcon } from './Icons';
 import { API_KEY, BASE_URL } from '../utils/urls';
 
 const Overview = () => {
-  const stopComplaining = 'no';
   const { id } = useParams();
   const navigate = useNavigate();
   const [details, setDetails] = useState({});
@@ -17,7 +16,7 @@ const Overview = () => {
       .then((data) => setDetails(data))
       .catch((e) => console.error(e))
       .finally(() => setLoading(false))
-  }, [stopComplaining]);
+  }, [id]);
 
   const onButtonClick = () => {
     navigate(-1);
