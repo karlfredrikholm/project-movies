@@ -24,7 +24,7 @@ const Overview = () => {
 
   if (loading) {
     return (
-      <p className="listTitle">Loading ...</p>
+      <section className="loadingScreen"><p>Loading ...</p></section>
     )
   }
 

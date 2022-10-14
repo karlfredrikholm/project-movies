@@ -1,10 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <header className="header">
-      <h1 className="logo"><span>Oj</span>Vad<span>Film</span>!</h1>
+      <Link to="section/popular">
+        <h1 className="logo"><span>Oj</span>Vad<span>Film</span>!</h1>
+      </Link>
       <nav>
         <ul className="menu">
           <li>

@@ -91,7 +91,7 @@ a {
 .overviewContainer {
   position: relative;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .backButton {
@@ -120,7 +120,7 @@ a {
 .posterAndInfoContainer {
   display: flex;
   align-items: flex-end;
-  min-height: 100vh;
+  min-height: 94vh;
   gap: 1rem;
   padding: 0 0 3rem 2rem;
 }
@@ -160,6 +160,17 @@ a {
 
 .infoContainer p {
   line-height: 1.2rem;
+}
+
+/* Loading Screen */
+.loadingScreen {
+  background-color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  color: lawngreen;
+  height: 100vh;
+  width: 100vw;
+  padding: 8rem;
 }
 
 @media (max-width: 785px) {

@@ -14,7 +14,7 @@ export const App = () => {
         <Route path="/section/:section" element={<List />} />
         <Route path="/movies/:id" element={<Overview />} />
         <Route path="/404" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/404" />} replace />
+        <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
     </BrowserRouter>
   );
