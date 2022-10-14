@@ -22,17 +22,15 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 3.5rem;
   padding: 0.6rem 1rem;
   background-color: black;
   color: white;
   font-weight: 700;
 }
 
-.logo {
-  color: lawngreen;
-}
 .logo span {
-  color: white;
+  color: rgb(0, 162, 255);
 }
 
 .menu {
@@ -43,7 +41,7 @@ code {
 }
 
 .active {
-  text-decoration: underline 2px solid lawngreen;
+  border-bottom: 2px solid rgb(0, 162, 255);
 }
 
 /* List.jsx */
@@ -52,6 +50,7 @@ code {
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* Movie.jsx */
 .movieContainer {
   background-size: cover;
   aspect-ratio: 1 / 1.5;
@@ -119,6 +118,7 @@ a {
 
 .posterAndInfoContainer {
   display: flex;
+  color: white;
   align-items: flex-end;
   min-height: 94vh;
   gap: 1rem;
@@ -134,16 +134,11 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  color: white;
   height: fit-content;
   padding-bottom: 1rem;
 }
 
-.infoContainer p {
-  width: 25rem;
-}
-
-.title {
+.overviewTitle {
   padding-right: 1rem;
 }
 
@@ -158,19 +153,20 @@ a {
   color: rgb(255, 181, 34);
 }
 
-.infoContainer p {
+.summary {
   line-height: 1.2rem;
+  width: 25rem;
 }
 
 /* Loading Screen */
 .loadingScreen {
   background-color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: lawngreen;
   height: 100vh;
   width: 100vw;
-  padding: 8rem;
+  padding: 2rem;
 }
 
 @media (max-width: 785px) {
@@ -179,9 +175,7 @@ a {
   }
 
   .header {
-    font-size: 0.9rem;
     justify-content: center;
-    padding: 0.8rem 0;
   }
 
   .listGrid {
@@ -201,11 +195,11 @@ a {
 }
 
 @media (max-width: 520px) {
-  .header {
-    font-size: 0.8rem;
-  }
-
   .listGrid {
     grid-template-columns: 1fr;
+  }
+
+  .summary {
+    width: 22rem;
   }
 }

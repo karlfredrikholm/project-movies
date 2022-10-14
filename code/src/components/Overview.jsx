@@ -38,11 +38,11 @@ const Overview = () => {
       <div className="posterAndInfoContainer">
         <img className="posterImage" src={`https://image.tmdb.org/t/p/w342/${details.poster_path}`} alt="movie poster" />
         <div className="infoContainer">
-          <h1 className="titleAndRating">
-            <span className="title">{details.title}</span>
+          <h1>
+            <span className="overviewTitle">{details.title}</span>
             <span className="rating"><i className="starIcon"><StarIcon /></i>{details.vote_average?.toFixed(1)}</span>
           </h1>
-          <p>{details.overview}</p>
+          <p className="summary">{details.overview}</p>
         </div>
       </div>
     </section>
