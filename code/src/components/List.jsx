@@ -6,7 +6,7 @@ import { API_KEY, BASE_URL } from '../utils/urls';
 const List = () => {
   const { section } = useParams();
   const [movies, setMovies] = useState([]);
-  let show = '';
+  let show = 'popular';
   if (section === 'popular') {
     show = 'popular';
   } else if (section === 'toprated') {

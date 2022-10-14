@@ -10,7 +10,7 @@ export const App = () => {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Navigate to="/section/popular" />} />
+        <Route path="/" element={<List />} />
         <Route path="/section/:section" element={<List />} />
         <Route path="/movies/:id" element={<Overview />} />
         <Route path="/404" element={<NotFound />} />
