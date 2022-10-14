@@ -199,7 +199,19 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .overviewContainer {
+    min-height: 92vh;
+  }
+
+  .backButton {
+    left: 1.2rem;
+  }
+
+  .oveviewTitle {
+    width: 20;
+  }
+
   .summary {
-    width: 22rem;
+    width: 20rem;
   }
 }
