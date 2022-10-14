@@ -200,11 +200,11 @@ a {
   }
 
   .overviewContainer {
-    min-height: 92vh;
+    min-height: 90vh;
   }
 
   .backButton {
-    left: 1.2rem;
+    left: 1rem;
   }
 
   .oveviewTitle {
